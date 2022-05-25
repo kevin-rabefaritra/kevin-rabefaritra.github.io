@@ -11,71 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="556e4ad0-1510-41e3-8e18-1f4ca4645eaa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/default-css.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/magnific-popup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/owl.carousel.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/slicknav.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/typography.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/apple-store.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/benifit-text.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/client-logo/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/client-logo/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/client-logo/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/client-logo/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/client-logo/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/client-logo/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/downloadareashape.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/hero-bg-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/hero-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/hero-right-thumb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icon/bitcoin-icon-hv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icon/bitcoin-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icon/bitcoin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icon/gicon1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icon/logo copy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icon/logo-short.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icon/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icon/telephone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icon/wallet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/match.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/play-store.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/screen-app-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/shape1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/shape10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/shape11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/shape2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/shape3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/shape4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/shape5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/shape6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/shape7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/shape8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/shape9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/svc--item-shape.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/testimonials/img1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/text-quotes.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/tst-bg-shape.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/video-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/counterup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/jquery.magnific-popup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/jquery.slicknav.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/owl.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/plugins.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/typed.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/vendor/jquery-2.2.4.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/vendor/modernizr-2.8.3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/waypoints.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1653488578808</updated>
-      <workItem from="1653488579871" duration="2425000" />
+      <workItem from="1653488579871" duration="3132000" />
     </task>
     <servers />
   </component>
