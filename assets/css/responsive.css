@@ -1,0 +1,342 @@
+@media screen and (min-width: 1500px) {}
+
+/* (1366x768) WXGA Display */
+@media screen and (min-width: 1551px) and (max-width: 1920px) {}
+
+/*Medium Desktop Device*/
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+    .hero-content h2 {
+        font-size: 48px;
+        line-height: 63px;
+    }
+
+    .section-title {
+        font-size: 39px;
+    }
+
+    .svc-item h4 a {
+        font-size: 21px;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+
+    .plan-item h4 {
+        font-size: 44px;
+    }
+
+    .counter-item h4 {
+        font-size: 39px
+    }
+
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hero-content h2 {
+        font-size: 44px;
+        line-height: 68px;
+    }
+
+    .hero-content {
+        margin-top: 0;
+    }
+
+    .section-title {
+        font-size: 32px;
+        line-height: 45px;
+    }
+
+    .main-menu>nav>ul>li>a {
+        margin-left: 25px;
+    }
+
+    .ht-right-btn a {
+        margin-left: 6px;
+    }
+
+    .svc-item h4 a {
+        font-size: 17px;
+    }
+
+    .shape3 {
+        max-width: 450px;
+    }
+
+    .benifit-text {
+        left: 34px;
+        max-width: 64px;
+    }
+
+    .text-quotes {
+        left: 21px;
+    }
+
+    .plan-item {
+        margin-bottom: 30px;
+    }
+
+    .pricing-area {
+        padding-bottom: 70px;
+    }
+
+    .download-store-btns a {
+        max-width: 45%;
+    }
+
+
+}
+
+
+/* Normal desktop :991px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .fwidget {
+        margin-bottom: 40px;
+    }
+
+    .footer-top {
+        padding-bottom: 60px;
+    }
+
+    .client-area {
+        padding: 70px 0;
+    }
+
+    .download-area {
+        text-align: center;
+    }
+
+    .plan-item {
+        margin-bottom: 30px;
+    }
+
+    .pricing-area {
+        padding: 80px 0 60px;
+    }
+
+    .section-title {
+        font-size: 34px;
+    }
+
+    .counter-item,
+    .benifit-svclist {
+        margin-bottom: 30px;
+    }
+
+    .counter-area {
+        padding-bottom: 60px;
+    }
+
+    .counter-item h4 {
+        font-size: 38px;
+    }
+
+    .benifit-area {
+        padding: 70px 0 70px;
+    }
+
+    .toggle-tabs {
+        float: none;
+        margin-top: 30px;
+    }
+
+    .service-area .text-content {
+        margin-bottom: 40px;
+    }
+
+    .hero-content h2 {
+        font-size: 40px;
+        line-height: 61px;
+    }
+
+    .hero-content {
+        margin-top: 0;
+    }
+
+    .hero-area {
+        padding: 139px 0 50px;
+    }
+
+}
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+
+    .footer-area .footer-bottom,
+    .footer-area .footer-bottom .flinks{
+        text-align: center;
+    }
+    .hero-content h2 {
+        font-size: 29px;
+        line-height: 42px;
+    }
+
+    .hero-area {
+        padding: 83px 0 70px;
+    }
+
+    .shape11 {
+        left: 0;
+    }
+
+    .hero-socials li a {
+        font-size: 14px;
+        margin-right: 0;
+        padding: 4px 9px;
+    }
+
+    .hero-content {
+        margin-top: 50px;
+    }
+
+    .section-title {
+        font-size: 29px;
+        line-height: 38px;
+    }
+
+    .text-content p {
+        color: #ffffff;
+    }
+
+    .service-area .text-content {
+        margin-bottom: 40px;
+    }
+
+    .svc-item {
+        margin-bottom: 30px;
+    }
+
+    .svc-item h4 a {
+        font-size: 21px;
+    }
+
+    .service-area {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    .shape3 {
+        max-width: 42%;
+    }
+
+    .shape2 {
+        left: 38%;
+        top: 65px;
+        max-width: 108px;
+    }
+
+    .benifit-area {
+        padding: 60px 0 60px;
+    }
+
+    .benifit-text {
+        left: 10px;
+        max-width: 49px;
+    }
+
+    p.text-title {
+        color: #09192c;
+    }
+
+    .toggle-tabs {
+        float: none;
+        margin-top: 20px;
+    }
+
+    .benifit-svclist {
+        margin-bottom: 30px;
+    }
+
+    .counter-item {
+        padding: 50px 13px;
+        margin-bottom: 40px;
+    }
+
+    .counter-item h4 {
+        font-size: 36px;
+        line-height: 36px;
+        margin-bottom: 6px;
+    }
+
+    .counter-area {
+        padding-bottom: 30px;
+    }
+
+    .get-header .shape4 {
+        right: 40px;
+        top: 70px;
+        max-width: 150px;
+    }
+
+    .get-header {
+        padding-right: 20px;
+    }
+
+    .tst-left-thumb {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .testimonial-area {
+        padding: 70px 0;
+    }
+
+    .tst-body p {
+        font-size: 17px;
+    }
+
+    .tst-carousel {
+        padding-left: 0;
+    }
+
+    .text-quotes {
+        position: static;
+        margin: 80px 0 15px;
+    }
+
+    .plan-item {
+        margin-bottom: 30px;
+    }
+
+    .pricing-area {
+        padding: 60px 0 50px;
+    }
+
+    .download-store-btns a {
+        max-width: 45%;
+    }
+
+    .client-area {
+        padding: 70px 0;
+    }
+
+    .fwidget {
+        margin-bottom: 40px;
+    }
+
+    .footer-top {
+        padding-bottom: 40px;
+    }
+
+    .pricing-head {
+        margin-bottom: 0;
+    }
+
+}
+
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+
+/* small mobile :320px. */
+@media (max-width: 479px) {
+    .footer-area .footer-bottom .flinks li a{
+        margin-left: 10px;
+    }
+    .footer-area .footer-bottom .flinks li:first-of-type a{
+        margin-left: 0;
+    }
+}
