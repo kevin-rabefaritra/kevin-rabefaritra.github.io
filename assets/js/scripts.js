@@ -124,7 +124,7 @@
     });
 
     $(".type").typed({
-        strings: ["eat", "code", "drink", "repeat"],
+        strings: ["write", "eat", "drink"],
         typeSpeed: 100,
         backDelay: 1200,
         loop: true,

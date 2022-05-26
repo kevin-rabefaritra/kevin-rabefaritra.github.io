@@ -1061,7 +1061,7 @@ p.text-title {
 .footer-top {
     overflow: hidden;
     background: #f9fcff;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
 }
 
 .flogo {
@@ -1945,4 +1945,19 @@ p.text-title {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+}
+
+.text-gold {
+    /* color:#ef5350!important; */
+    background-color: #fc4a1a;
+    background-image: linear-gradient(45deg, #fc4a1a, #f7b733);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
 }
