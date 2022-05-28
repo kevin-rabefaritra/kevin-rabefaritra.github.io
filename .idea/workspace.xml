@@ -12,9 +12,31 @@
   <component name="ChangeListManager">
     <list default="true" id="556e4ad0-1510-41e3-8e18-1f4ca4645eaa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/default-css.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/default-css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/apple-store.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/benifit-text.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/client-logo/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/client-logo/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/client-logo/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/client-logo/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/client-logo/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/client-logo/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/client-logo/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/client-logo/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/client-logo/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/client-logo/5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/client-logo/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/client-logo/6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/hero-bg-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/hero-right-thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon/bitcoin-icon-hv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon/bitcoin-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon/bitcoin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon/gicon1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon/log.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon/logo copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon/logo-short.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon/telephone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon/wallet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/match.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/play-store.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/screen-app-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/screen-app-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/testimonials/img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/video-bg.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,17 +61,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images/client-logo" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/images/client-logo" />
       <recent name="$PROJECT_DIR$/assets/images" />
       <recent name="$PROJECT_DIR$/assets/images/icon" />
       <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/images" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -61,7 +84,8 @@
       <option name="presentableId" value="Default" />
       <updated>1653488578808</updated>
       <workItem from="1653488579871" duration="3203000" />
-      <workItem from="1653571625949" duration="5593000" />
+      <workItem from="1653571625949" duration="5768000" />
+      <workItem from="1653707263016" duration="2374000" />
     </task>
     <servers />
   </component>
@@ -81,13 +105,13 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="458" y="200" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1653488698146">
+    <state x="458" y="200" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1653714288059">
       <screen x="0" y="23" width="1440" height="847" />
     </state>
-    <state x="458" y="200" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.847@0.23.1440.847" timestamp="1653488698146" />
-    <state x="421" y="201" width="598" height="490" key="find.popup" timestamp="1653492916127">
+    <state x="458" y="200" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.847@0.23.1440.847" timestamp="1653714288059" />
+    <state x="421" y="201" width="598" height="490" key="find.popup" timestamp="1653712909105">
       <screen x="0" y="23" width="1440" height="847" />
     </state>
-    <state x="421" y="201" width="598" height="490" key="find.popup/0.23.1440.847@0.23.1440.847" timestamp="1653492916127" />
+    <state x="421" y="201" width="598" height="490" key="find.popup/0.23.1440.847@0.23.1440.847" timestamp="1653712909105" />
   </component>
 </project>
