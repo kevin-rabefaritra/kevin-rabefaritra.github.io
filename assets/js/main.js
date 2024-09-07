@@ -216,8 +216,16 @@
 	const images = ['AUM_0578.png', 'alt_01.png', 'alt_02.png', 'alt_03.png'];
 	let index = 0;
 	setInterval(function() {
-			index = (index + 1) % images.length;
-			$('#face').attr('src', `images/${images[index]}`);
+		index = (index + 1) % images.length;
+		$('#face').attr('src', `images/${images[index]}`);
 	}, 800);
+
+	// Face with coffee
+	const coffeeImages = ['AUM_0578_coffee_1.jpg', 'AUM_0578_coffee_2.jpg'];
+	let coffeeIndex = 0;
+	setInterval(function() {
+		coffeeIndex = (coffeeIndex + 1) % coffeeImages.length;
+		$('#faceDrinkingCoffee').attr('src', `images/${coffeeImages[coffeeIndex]}`);
+	}, 1600);
 
 })(jQuery);
