@@ -1,0 +1,40 @@
+.badges {
+	display: flex;
+	align-items: stretch;
+	gap: 20px;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+}
+
+.badges img {
+	height: 180px;
+	object-fit: cover;
+	flex-shrink: 0;
+}
+
+figcaption {
+	font-style: italic;
+}
+
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	z-index: 5;
+}
+
+.face-container {
+	position: relative;
+	width: 50vw; /* Picture takes half the width */
+	height: auto;
+}
+
+.face-container img {
+	width: 100%; /* Take full width of the container */
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
