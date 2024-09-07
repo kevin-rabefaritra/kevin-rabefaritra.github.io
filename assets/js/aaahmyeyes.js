@@ -11,6 +11,7 @@
   const faceWidth = faceRect.width;
   const faceHeight = faceRect.height;
   const faceY = faceRect.top;
+  const windowWidth = $(window).width();
 
   const camera = new THREE.PerspectiveCamera(75, faceWidth / faceHeight, 0.1, 1000);
   const renderer = new THREE.WebGLRenderer({ alpha: true });
@@ -99,7 +100,14 @@
     window.scrollTo(0, 0);
   };
 
-  window.addEventListener('resize', () => location.reload());
+  window.addEventListener('resize', () => {
+    // Fix: we only reload the page when the width changes. This avoids false
+    // events when the height is adjusted automatically on mobile.
+    const newWindowWidth = $(window).width();
+    if (newWindowWidth !== windowWidth) {
+      location.reload();
+    }
+  });
   updateCanvasPosition();
   
   // Initial scroll
