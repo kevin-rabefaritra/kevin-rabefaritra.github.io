@@ -212,4 +212,12 @@
 		$('#contactTitle').text('Contactez-moi par mail !');
 	});
 
+	// Face
+	const images = ['AUM_0578.png', 'alt_01.png', 'alt_02.png', 'alt_03.png'];
+	let index = 0;
+	setInterval(function() {
+			index = (index + 1) % images.length;
+			$('#face').attr('src', `images/${images[index]}`);
+	}, 800);
+
 })(jQuery);
