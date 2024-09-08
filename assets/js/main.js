@@ -228,4 +228,12 @@
 		$('#faceDrinkingCoffee').attr('src', `images/${coffeeImages[coffeeIndex]}`);
 	}, 1600);
 
+	// Face with violin
+	const violinImages = ['AUM_0578_violin_1.jpg', 'AUM_0578_violin_2.jpg'];
+	let violinIndex = 0;
+	setInterval(function() {
+		violinIndex = (violinIndex + 1) % violinImages.length;
+		$('#facePlayingViolin').attr('src', `images/${violinImages[violinIndex]}`);
+	}, 1200);
+
 })(jQuery);
