@@ -210,6 +210,7 @@
 		$('#contactForm').hide();
 		$('#contactText').show();
 		$('#contactTitle').text('Contactez-moi par mail !');
+		startSayNo();
 	});
 
 	// Face
@@ -235,5 +236,15 @@
 		violinIndex = (violinIndex + 1) % violinImages.length;
 		$('#facePlayingViolin').attr('src', `images/${violinImages[violinIndex]}`);
 	}, 1200);
+
+	function startSayNo() {
+		// Face saying no
+		const noImages = ['AUM_0578_no_1.jpg', 'AUM_0578_no_2.jpg'];
+		let noIndex = 0;
+		setInterval(function() {
+			noIndex = (noIndex + 1) % noImages.length;
+			$('#faceSayingNo').attr('src', `images/${noImages[noIndex]}`);
+		}, 700);
+	}
 
 })(jQuery);
