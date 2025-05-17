@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: lofi --default;
+}
+
+h1 {
+  @apply text-5xl font-bold;
+}
+
+h2 {
+  @apply text-4xl font-bold;
+}
+
+.chat-bubble.chat-bubble-default {
+  @apply bg-neutral-300;
+}
+
+.chat-bubble.chat-bubble-primary {
+  background-color: #0082d8;
+}
