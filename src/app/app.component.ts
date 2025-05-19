@@ -7,7 +7,7 @@ import { HeaderComponent } from "./shared/header/header.component";
   imports: [
     RouterOutlet,
     HeaderComponent
-],
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

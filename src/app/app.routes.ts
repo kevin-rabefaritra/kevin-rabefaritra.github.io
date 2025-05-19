@@ -5,7 +5,7 @@ import { NiuzComponent } from './projects/niuz/niuz.component';
 import { PrivacyPolicyComponent } from './projects/pharmada/privacy-policy/privacy-policy.component';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', title: 'site de kevin', component: HomeComponent },
 
   // Projects
   { path: 'pharmada', title: 'Pharmada', component: PharmadaComponent },
