@@ -1,5 +1,9 @@
-<app-header></app-header>
+<div class="h-screen flex">
+  <div class="sidebar border-r border-border fixed top-0 left-0 h-screen text-xs flex flex-col sidebar-minimized">
+    <app-sidenav></app-sidenav>
+  </div>
 
-<div class="mt-8">
-  <router-outlet />
+  <div class="flex-1 flex flex-col transition-all duration-300 overflow-x-hidden overflow-y-auto main">
+    <router-outlet />
+  </div>
 </div>

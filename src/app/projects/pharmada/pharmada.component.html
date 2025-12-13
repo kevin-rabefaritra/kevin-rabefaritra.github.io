@@ -1,18 +1,43 @@
-<div class="grid md:grid-cols-3 gap-4">
-  <pharmada-app-info class="text-center md:hidden md:flex justify-center" />
-  <div>
-    <img alt="Pharmada home screen screenshot" src="/projects/pharmada/screenshot-1.png" class="rounded-xl w-full"/>
-    <img alt="Pharmada news feed screenshot" src="/projects/pharmada/screenshot-2.png" class="rounded-xl w-full mt-4"/>
+<h1 class="m-5">/pharmada</h1>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 px-5 pb-5 ">
+  <div class="card">
+    <h2 class="mb-2">Présentation</h2>
+    <p class="text-sm opacity-75 mt-1">Pharmada est une application mobile qui permet de consulter plusieurs
+      informations
+      pratiques telles que les pharmacies de garde, les numéros d'urgence et établissements de santé.</p>
+
+    <div class="btn mt-4 flex flex-row justify-center">
+      <a href="https://play.google.com/store/apps/details?id=mg.startapps.pharmada" target="_blank"
+        class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="feather feather-external-link">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+          <polyline points="15 3 21 3 21 9"></polyline>
+          <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+        <span>Google Play Store</span>
+      </a>
+    </div>
   </div>
 
-  <div>
-    <pharmada-app-info class="text-center hidden md:flex justify-center" />
-    <img alt="Pharmada emergency numbers screenshot" src="/projects/pharmada/screenshot-3.png" class="rounded-xl w-full mt-4"/>
-    <img alt="Pharmada drugstore details screenshot" src="/projects/pharmada/screenshot-4.png" class="rounded-xl w-full mt-4"/>
-  </div>
+  <img class="rounded-sm w-100" src="/projects/pharmada/screenshot-1.png" />
 
-  <div>
-    <img alt="Pharmada health centers screenshot" src="/projects/pharmada/screenshot-6.png" class="rounded-xl w-full"/>
-    <img alt="Pharmada supported languages screenshot" src="/projects/pharmada/screenshot-5.png" class="rounded-xl w-full mt-4"/>
+  <div class="card">
+    <h2 class="mb-2">Stack technique</h2>
+    <div class="flex flex-col gap-4 mt-2">
+      <div>
+        <div class="flex items-center">
+          <p class="text-sm">Front-end</p>
+        </div>
+        <p class="text-sm opacity-75 mt-1">Ionic 7 / Angular 19</p>
+      </div>
+      <div>
+        <div class="flex items-center">
+          <p class="text-sm">Backend</p>
+        </div>
+        <p class="text-sm opacity-75 mt-1">Java 21 / Spring Boot 3.2 / PostgreSQL / Docker</p>
+      </div>
+    </div>
   </div>
 </div>

@@ -1,0 +1,8 @@
+.main {
+  margin-left: var(--sidebar-minimized-width, 80px);
+}
+
+.sidebar-minimized {
+  overflow-x: hidden;
+  width: var(--sidebar-minimized-width);
+}
