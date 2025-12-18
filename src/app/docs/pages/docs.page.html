@@ -20,7 +20,7 @@
                   <ul>
                     @for (file of file.content; track $index) {
                     @if (file.src) {
-                    <li><a [routerLink]="['/documents', file.src]">{{ file.name }}</a></li>
+                    <li><a [routerLink]="['/d', file.src]">{{ file.name }}</a></li>
                     }
                     @else {
                     <li>{{ file.name }}</li>

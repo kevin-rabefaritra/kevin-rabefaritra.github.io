@@ -13,5 +13,5 @@ export const routes: Routes = [
 
   // Docs
   { path: 'documents', title: 'Documents', component: DocsPage },
-  { path: 'documents/:src', title: 'Documents', component: DocsPage }
+  { path: 'd/:src', title: 'Documents', component: DocsPage }
 ];
