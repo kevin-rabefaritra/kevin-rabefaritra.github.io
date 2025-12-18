@@ -1,5 +1,5 @@
 import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { provideRouter, withHashLocation } from '@angular/router';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MARKED_OPTIONS, MERMAID_OPTIONS, provideMarkdown } from 'ngx-markdown';
 
@@ -11,7 +11,7 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideAnimationsAsync(),
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideRouter(routes), provideClientHydration(withEventReplay()),
+    provideRouter(routes, withHashLocation()), provideClientHydration(withEventReplay()),
     provideHttpClient(withFetch()),
     provideMarkdown(
       {
