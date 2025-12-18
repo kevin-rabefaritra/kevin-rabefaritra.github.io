@@ -32,9 +32,11 @@ export class DocsPage implements OnInit {
   selectedSrc = signal<string | null>(null);
 
   ngOnInit(): void {
-    const doc = this.route.snapshot.paramMap.get('src');
-    if (doc) {
-      this.selectedSrc.set(doc);
-    }
+    this.route.paramMap.subscribe(params => {
+      const doc = params.get('src');
+      if (doc) {
+        this.selectedSrc.set(doc);
+      }
+    });
   }
 }
