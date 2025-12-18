@@ -1,4 +1,4 @@
-<!doctype html>
+export default `<!doctype html>
 <html lang="en" data-beasties-container="">
 
 <head>
@@ -23,4 +23,4 @@
   <app-root></app-root>
 <link rel="modulepreload" href="chunk-7TFMVREL.js"><script src="polyfills-FFHMD2TL.js" type="module"></script><script src="scripts-4HC7NRVR.js" defer=""></script><script src="main-2NAIFBYU.js" type="module"></script></body>
 
-</html>
+</html>`;

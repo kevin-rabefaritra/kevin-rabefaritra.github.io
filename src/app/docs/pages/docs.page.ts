@@ -1,0 +1,44 @@
+import { AfterViewInit, Component, DestroyRef, inject, OnInit, signal } from '@angular/core';
+import { DocFile } from '../models/doc-file.model';
+import { ActivatedRoute, RouterModule } from '@angular/router';
+import { PostComponent } from "../components/post/post.component";
+
+@Component({
+  selector: 'app-docs',
+  imports: [RouterModule, PostComponent],
+  templateUrl: './docs.page.html',
+  styleUrl: './docs.page.scss'
+})
+export class DocsPage implements OnInit {
+
+  private readonly activatedRoute = inject(ActivatedRoute);
+  private readonly destroyRef = inject(DestroyRef);
+
+  files: DocFile[] = [
+    {
+      name: 'docs', content: [
+        {
+          name: 'general', content: [
+            { name: 'Élection présidentielle 2023', src: 'election-presidentielle-2023' }
+          ]
+        },
+        {
+          name: 'education'
+        }
+      ]
+    }
+  ];
+
+  selectedSrc = signal<string | null>(null);
+
+  ngOnInit(): void {
+    this.activatedRoute.queryParamMap.subscribe({
+      next: (params) => {
+        const src = params.get('src');
+        if (src) {
+          this.selectedSrc.set(src);
+        }
+      }
+    });
+  }
+}

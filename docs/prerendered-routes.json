@@ -1,0 +1,8 @@
+{
+  "routes": {
+    "/": {},
+    "/documents": {},
+    "/pharmada": {},
+    "/pharmada/privacy-policy": {}
+  }
+}

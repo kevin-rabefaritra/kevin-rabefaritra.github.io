@@ -1,0 +1,41 @@
+:host {
+  display: block;
+  padding: calc(4 * var(--spacing));
+}
+
+::ng-deep h1 {
+  margin-bottom: calc(var(--spacing) * 2);
+}
+
+::ng-deep p {
+  margin-bottom: calc(var(--spacing));
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+}
+
+::ng-deep hr {
+  margin: calc(2 * var(--spacing)) 0;
+}
+
+::ng-deep th {
+  text-align: left;
+  padding-right: calc(4 * var(--spacing));
+  padding-left: var(--spacing);
+  border: 1pt solid var(--color-border);
+  font-size: var(--font-size-base);
+}
+
+::ng-deep table {
+  margin: calc(2 * var(--spacing)) 0;
+}
+
+::ng-deep td {
+  padding-right: calc(4 * var(--spacing));
+  padding-left: var(--spacing);
+  border: 1pt solid var(--color-border);
+  font-size: var(--font-size-base);
+}
+
+::ng-deep tr td:nth-child(n+2) {
+  text-align: right;
+  padding-right: var(--spacing);
+}
