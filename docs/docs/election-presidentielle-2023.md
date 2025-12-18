@@ -1,11 +1,15 @@
 # Élection présidentielle 2023
 ## Statistiques générales
 
-| Intitulé    | Total   |
-| ------- | ------- |
-| Population   | 31 195 932|
-| Inscrits   | 11 045 596|
-| Votants | 5 119 018|
+On observe seulement un taux de participation de ~46,35%.
+
+```mermaid
+sankey-beta
+Population,Inscrits,11045596
+Population,Non inscrits,20150336
+Inscrits,Votants,5119018
+Inscrits,Non votants,5926578
+```
 
 -------------------
 ## Répartition par sexe
