@@ -2,6 +2,7 @@ import { AfterViewInit, Component, DestroyRef, inject, OnInit, signal } from '@a
 import { DocFile } from '../models/doc-file.model';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { PostComponent } from "../components/post/post.component";
+import { Observable, switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-docs',
@@ -11,8 +12,7 @@ import { PostComponent } from "../components/post/post.component";
 })
 export class DocsPage implements OnInit {
 
-  private readonly activatedRoute = inject(ActivatedRoute);
-  private readonly destroyRef = inject(DestroyRef);
+  private readonly route = inject(ActivatedRoute);
 
   files: DocFile[] = [
     {
@@ -32,13 +32,9 @@ export class DocsPage implements OnInit {
   selectedSrc = signal<string | null>(null);
 
   ngOnInit(): void {
-    this.activatedRoute.queryParamMap.subscribe({
-      next: (params) => {
-        const src = params.get('src');
-        if (src) {
-          this.selectedSrc.set(src);
-        }
-      }
-    });
+    const doc = this.route.snapshot.paramMap.get('src');
+    if (doc) {
+      this.selectedSrc.set(doc);
+    }
   }
 }

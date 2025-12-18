@@ -75,6 +75,9 @@
 | Autre                        | 752 520        | 6,81%       |
 
 ### Analamanga
+
+Si les argiculteurs représentent près de 70% au niveau national, ils ne représentent qu'environ 32% dans la région Analamanga.
+
 | Catégorie                    | Total | Pourcentage |
 |-----------------------------|-------------------|-------------|
 | Agriculteur                | 578 558           | 31,44 %     |

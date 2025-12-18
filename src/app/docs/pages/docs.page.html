@@ -1,5 +1,5 @@
 <h1 class="m-5">/documents</h1>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-5 px-5 pb-5">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5 px-5 pb-5 items-start">
   <div class="card">
     <div class="p-4">
       <h2 class="mb-2">Présentation</h2>
@@ -20,7 +20,7 @@
                   <ul>
                     @for (file of file.content; track $index) {
                     @if (file.src) {
-                    <li><a [routerLink]="['/documents']" [queryParams]="{src: file.src}">{{ file.name }}</a></li>
+                    <li><a [routerLink]="['/documents', file.src]">{{ file.name }}</a></li>
                     }
                     @else {
                     <li>{{ file.name }}</li>
