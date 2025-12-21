@@ -3,6 +3,8 @@ import { DocFile } from '../models/doc-file.model';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { PostComponent } from "../components/post/post.component";
 import { Observable, switchMap } from 'rxjs';
+import { DocsService } from '../services/docs.service';
+import { SeoService } from '../../shared/services/seo.service';
 
 @Component({
   selector: 'app-docs',
@@ -13,29 +15,21 @@ import { Observable, switchMap } from 'rxjs';
 export class DocsPage implements OnInit {
 
   private readonly route = inject(ActivatedRoute);
+  private readonly docsService = inject(DocsService);
+  private readonly seoService = inject(SeoService);
 
-  files: DocFile[] = [
-    {
-      name: 'docs', content: [
-        {
-          name: 'general', content: [
-            { name: 'Élection présidentielle 2023', src: 'election-presidentielle-2023' }
-          ]
-        },
-        {
-          name: 'education'
-        }
-      ]
-    }
-  ];
+  files: DocFile[] = [];
 
-  selectedSrc = signal<string | null>(null);
+  selectedDoc = signal<DocFile | null>(null);
 
   ngOnInit(): void {
+    this.files = this.docsService.getDocs();
     this.route.paramMap.subscribe(params => {
-      const doc = params.get('src');
+      const src = params.get('src');
+      const doc = this.docsService.findBySrc(src);
       if (doc) {
-        this.selectedSrc.set(doc);
+        this.selectedDoc.set(doc);
+        this.seoService.setInfo(doc.name, doc.description);
       }
     });
   }

@@ -1,7 +1,8 @@
 import { HttpErrorResponse, HttpStatusCode } from '@angular/common/http';
-import { Component, inject, Input, OnInit, signal } from '@angular/core';
+import { Component, computed, inject, Input, OnInit, signal } from '@angular/core';
 import { Router } from 'express';
 import { MarkdownComponent } from 'ngx-markdown';
+import { DocFile } from '../../models/doc-file.model';
 
 @Component({
   selector: 'app-post',
@@ -11,15 +12,22 @@ import { MarkdownComponent } from 'ngx-markdown';
 })
 export class PostComponent {
 
-  _path = signal<string | null>(null);
+  _doc = signal<DocFile | null>(null);
 
-  @Input({ required: true }) set src(src: string) {
-    this._path.set(`/docs/${src}.md`);
+  @Input({ required: true }) set doc(doc: DocFile) {
+    this._doc.set(doc);
   };
+
+  path = computed(() => {
+    if (!this._doc()) {
+      return `/docs/404.md`;
+    }
+    return `/docs/${this._doc()!.src}.md`;
+  });
 
   handleError(error: any): void {
     if (error.status === HttpStatusCode.NotFound) {
-      this._path.set(`/docs/404.md`);
+      this._doc.set(null);
     }
   }
 }

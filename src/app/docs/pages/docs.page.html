@@ -38,9 +38,9 @@
     </div>
   </div>
 
-  @if (selectedSrc()) {
-  <div class="card overflow-x-scroll md:col-span-2">
-    <app-post [src]="selectedSrc()!" />
-  </div>
+  @if (selectedDoc()) {
+    <div class="card overflow-x-scroll md:col-span-2">
+      <app-post [doc]="selectedDoc()!" />
+    </div>
   }
 </div>
