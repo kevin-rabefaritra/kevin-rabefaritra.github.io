@@ -40,3 +40,21 @@
   text-align: right;
   padding-right: var(--spacing);
 }
+
+::ng-deep .legend > text {
+  font-family: var(--theme-font-mono) !important;
+}
+
+::ng-deep text.slice {
+  font-family: var(--theme-font-mono) !important;
+}
+
+::ng-deep .node-labels > text {
+  font-family: var(--theme-font-mono) !important;
+}
+
+@media (min-width: 768px) {
+  ::ng-deep .legend > text {
+    font-size: var(--text-sm) !important;
+  }
+}

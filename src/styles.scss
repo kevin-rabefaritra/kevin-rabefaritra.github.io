@@ -24,15 +24,20 @@ h2 {
   font-weight: 500;
 }
 
+h3 {
+  font-weight: 300;
+  margin-top: calc(2 * var(--spacing));
+}
+
 .text-muted {
   color: var(--color-grey-700);
 }
 
-p, li {
+h1, h2, h3, p, li {
     font-size: var(--font-size-base-mobile);
 }
 @media (min-width: 768px) {
-    p, li {
+    h1, h2, h3, p, li {
         font-size: var(--font-size-base);
     }
 }
