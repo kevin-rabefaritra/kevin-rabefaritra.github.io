@@ -114,12 +114,12 @@ Les analyses ci-dessous ont été faites sur les résultats d'environ **24 000 b
 On pourrait penser que ce sont dans zones où les électeurs sont majoritairement des argiculteurs que les votes sont les plus faibles.
 Pourtant, il ne semble pas y avoir de lien.
 
-![Relation entre le nombre d'argiculteurs et le taux de suffrages exprimés](/docs/election-presidentielle-2023-agriculteurs-se.png "Relation entre le nombre d'argiculteurs et le taux de suffrages exprimés")
+![Relation entre le nombre d'argiculteurs et le taux de votes](/docs/election-presidentielle-2023-agriculteurs-se.png "Relation entre le nombre d'argiculteurs et le taux de votes")
 
 ### Étudiants
 
-Pourtant, il semble y avoir un lien entre les **étudiants** et les **suffrages exprimés** : les étudiants ont moins de probabilité de voter.
+Pourtant, il semble y avoir un lien entre les **étudiants** et le taux de **vote** : les étudiants ont moins de probabilité de voter.
 
-![Relation entre le nombre d'étudiants et le taux de suffrages exprimés](/docs/election-presidentielle-2023-etudiants-se.png "Relation entre le nombre d'étudiants et le taux de suffrages exprimés")
+![Relation entre le nombre d'étudiants et le taux de votes](/docs/election-presidentielle-2023-etudiants-se.png "Relation entre le nombre d'étudiants et le taux de votes")
 
 **Sources**: [CENI](https://www.ceni-madagascar.mg/), [INSTAT](https://www.instat.mg/)
