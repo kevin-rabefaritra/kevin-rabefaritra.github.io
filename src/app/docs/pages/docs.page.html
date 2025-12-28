@@ -1,45 +1,26 @@
 <h1 class="m-5">/documents</h1>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-5 px-5 pb-5 items-start">
+<div class="flex flex-col align-top gap-5 px-5 pb-5 md:px-6 max-w-4xl mx-auto">
   <div class="card">
     <div class="p-4">
-      <h2 class="mb-2">Présentation</h2>
-      <p class="text-muted mt-1">Des données compilées par-ci par-là.</p>
+      <h2>Présentation</h2>
     </div>
     <hr />
-    <div class="px-1 py-2">
-      <ul class="tree">
-        <li>
-          <details open>
-            @for (file of files; track $index) {
-            <summary><span class="material-symbols-outlined">folder_open</span>{{ file.name }}/</summary>
-            <ul>
-              @for (file of file.content; track $index) {
-              <li>
-                <details open>
-                  <summary><span class="material-symbols-outlined">folder_open</span>{{ file.name }}/</summary>
-                  <ul>
-                    @for (file of file.content; track $index) {
-                    @if (file.src) {
-                    <li><a [routerLink]="['/d', file.src]">{{ file.name }}</a></li>
-                    }
-                    @else {
-                    <li>{{ file.name }}</li>
-                    }
-                    }
-                  </ul>
-                </details>
-              </li>
-              }
-            </ul>
-            }
-          </details>
-        </li>
+    <div class="px-4 py-2">
+      <ul>
+        @for (file of files; track $index) {
+          @if (selectedDoc()?.src === file.src) {
+            <li><a [routerLink]="['/d', file.src]"><span class="material-symbols-outlined">folder_open</span> {{ file.name }}</a></li>
+          }
+          @else {
+            <li><a [routerLink]="['/d', file.src]"><span class="material-symbols-outlined">folder</span> {{ file.name }}</a></li>
+          }
+        }
       </ul>
     </div>
   </div>
 
   @if (selectedDoc()) {
-    <div class="card overflow-x-scroll md:col-span-2">
+    <div class="card overflow-x-scroll">
       <app-post [doc]="selectedDoc()!" />
     </div>
   }
