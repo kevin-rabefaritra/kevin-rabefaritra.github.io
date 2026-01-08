@@ -1,6 +1,5 @@
 # Élection présidentielle 2023
 ## Statistiques générales
-### Taux de participation général
 On observe seulement un taux de participation de **~46,35%** au niveau national.
 
 ```mermaid
@@ -11,15 +10,7 @@ Inscrits,Votants,5119018
 Inscrits,Non votants,5926578
 ```
 
-### Répartition par sexe
-
-```mermaid
-pie showData
-"Hommes" : 5683924
-"Femmes" : 5361672
-```
-
-### Répartition par région
+## Répartition par région
 
 ```mermaid
 pie showData
@@ -49,9 +40,9 @@ pie showData
 ```
 
 -------------------
-## 2. Statistiques par catégorie socio-professionnelle
+# Statistiques par catégorie socio-professionnelle
 
-### National
+## National
 
 Au niveau national, les agriculteurs représentent la grande majorité des électeurs : ils comptent près de 70%.
 
@@ -77,9 +68,9 @@ pie showData
 "Autre": 766021
 ```
 
-### Analamanga
+## Analamanga
 
-En revanche, si les argiculteurs représentent la grande majorité au niveau national, ils ne représentent qu'environ **31%** dans la région Analamanga, suivi des étudiants et des commerçants.
+Si les argiculteurs représentent la grande majorité au niveau national, ils ne représentent qu'environ **31%** dans la région Analamanga, suivi des étudiants et des commerçants.
 
 ```mermaid
 pie showData
@@ -105,21 +96,23 @@ pie showData
 ```
 
 
-## 2. Lien entre catégorie socio-profesionnelle et votes
+# Lien entre catégorie socio-profesionnelle et votes
 
 Les analyses ci-dessous ont été faites sur les résultats d'environ **24 000 bureaux** de vote.
 
-### Agriculteurs
+## Agriculteurs
 
 On pourrait penser que ce sont dans zones où les électeurs sont majoritairement des argiculteurs que les votes sont les plus faibles.
 Pourtant, il ne semble pas y avoir de lien.
 
 ![Relation entre le nombre d'argiculteurs et le taux de votes](/docs/election-presidentielle-2023-agriculteurs-se.png "Relation entre le nombre d'argiculteurs et le taux de votes")
 
-### Étudiants
+## Étudiants
 
 Pourtant, il semble y avoir un lien entre les **étudiants** et le taux de **vote** : les étudiants ont moins de probabilité de voter.
 
 ![Relation entre le nombre d'étudiants et le taux de votes](/docs/election-presidentielle-2023-etudiants-se.png "Relation entre le nombre d'étudiants et le taux de votes")
+
+# Tendance de votes par catégorie socio-profesionnelle
 
 **Sources**: [CENI](https://www.ceni-madagascar.mg/), [INSTAT](https://www.instat.mg/)

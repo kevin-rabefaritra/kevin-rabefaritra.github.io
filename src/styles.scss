@@ -13,6 +13,7 @@ body {
 
 hr {
   color: var(--color-border);
+  border-top: 2pt solid var(--color-border);
 }
 
 /* Typography */
@@ -57,7 +58,7 @@ h1, h2, h3, p, li {
 }
 
 .card {
-  border: 1pt solid var(--color-border);
+  border: 2pt solid var(--color-grey-800);
   border-radius: 4px;
   padding: calc(var(--spacing) * 4);
 }
