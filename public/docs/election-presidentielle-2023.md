@@ -2,13 +2,7 @@
 ## Statistiques générales
 On observe seulement un taux de participation de **~46,35%** au niveau national.
 
-```mermaid
-sankey-beta
-Population,Inscrits,11045596
-Population,Non inscrits,20150336
-Inscrits,Votants,5119018
-Inscrits,Non votants,5926578
-```
+![Statistiques générales votants élection présidentielle 2023 Madagascar](/docs/election-presidentielle-2023-votants.png "Statistiques générales votants élection présidentielle 2023 Madagascar")
 
 ## Répartition par région
 
@@ -95,7 +89,7 @@ pie showData
 "Autre": 329689
 ```
 
-
+-------------------
 # Lien entre catégorie socio-profesionnelle et votes
 
 Les analyses ci-dessous ont été faites sur les résultats d'environ **24 000 bureaux** de vote.
@@ -103,16 +97,38 @@ Les analyses ci-dessous ont été faites sur les résultats d'environ **24 000 b
 ## Agriculteurs
 
 On pourrait penser que ce sont dans zones où les électeurs sont majoritairement des argiculteurs que les votes sont les plus faibles.
-Pourtant, il ne semble pas y avoir de lien.
+Pourtant, il ne semble pas y avoir de lien : le taux de présence d'agriculteurs n'influe pas sur le taux de votes.
 
 ![Relation entre le nombre d'argiculteurs et le taux de votes](/docs/election-presidentielle-2023-agriculteurs-se.png "Relation entre le nombre d'argiculteurs et le taux de votes")
 
 ## Étudiants
 
-Pourtant, il semble y avoir un lien entre les **étudiants** et le taux de **vote** : les étudiants ont moins de probabilité de voter.
+Pourtant, il semble y avoir un lien entre les **étudiants** et le taux de **vote**, les étudiants ont moins de probabilité de voter. Plus le nombre d'étudiants votants est élevé, moins le taux de votes est élevé.
 
 ![Relation entre le nombre d'étudiants et le taux de votes](/docs/election-presidentielle-2023-etudiants-se.png "Relation entre le nombre d'étudiants et le taux de votes")
 
-# Tendance de votes par catégorie socio-profesionnelle
+-------------------
+# Fokontany remportés par candidat
+
+En prenant compte uniquement le candidat ayant la majorité des votes par fokontany.
+
+|Candidat   |Fokontany remportés   |
+|---|---|
+|1. Tahina RAZAFINJOELINA  |   3|
+|2. Hajo Herivelona ANDRIANAINARIVELO   |   6|
+|3. Andry Nirina RAJOELINA   |14 135|
+|4. Iarovana Roland RATSIRAKA   |   2|
+|5. Marc RAVALOMANANA   | 2 119|
+|6. Auguste Richard PARAINA   |   4|
+|7. Andry RAOBELINA   |   0|
+|8. Jean Brunelle RAZAFINTSIANDRAOFA   |   6|
+|9. Lalaina Harilanto RATSIRAHONANA   |   0|
+|10. Hery Martial RAJOANARIMAMPIANINA   |685|
+|11. Sendrison Daniela RADERANIRINA   |   0|
+|12. Jean-Jacques RATSIETISON   |   0|
+|13. Siteny Thierry RANDRIANASOLONIAIKO   |1 979|
+|Ex-aequo   |113   |
+|*Total*   |19 052|
+
 
 **Sources**: [CENI](https://www.ceni-madagascar.mg/), [INSTAT](https://www.instat.mg/)
