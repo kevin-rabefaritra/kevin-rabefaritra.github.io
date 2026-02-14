@@ -2,21 +2,27 @@
   --sidebar-minimized-width: 50px;
 
   /* Colors */
-  --color-background: #efe5c0;
-  --color-foreground: #000;
+  --color-background: #262624;
+  --color-foreground: #9E9E9E;
   --color-border: #424242;
 
+  --color-white: #ffffff;
+
   --color-black: #000000;
+  --color-grey-200: #EEEEEE;
+  --color-grey-400: #BDBDBD;
   --color-grey-500: #9E9E9E;
   --color-grey-600: #757575;
   --color-grey-700: #616161;
   --color-grey-800: #424242;
   --color-grey-900: #212121;
 
+  --card-background-color: #ffffff05;
+
   /* Fonts */
-  --theme-font-mono: "EB Garamond","Garamond","Times New Roman",serif;
+  --theme-font: "Source Serif 4", Times New Roman, Times, serif;
   --font-size-base-mobile: 16px;
-  --font-size-base: 18px;
+  --font-size-base: 16px;
 
   --line-height-base: 1.6;
 

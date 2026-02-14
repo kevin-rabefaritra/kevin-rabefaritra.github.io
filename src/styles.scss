@@ -2,13 +2,14 @@
 @import 'assets/styles/variables.scss';
 
 body {
-  font-family: var(--theme-font-mono);
+  font-family: var(--theme-font);
   font-size: 16px;
   line-height: var(--line-height-base);
   -webkit-text-size-adjust: 100%;
   font-optical-sizing: auto;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
+  color: var(--color-white);
 }
 
 hr {
@@ -31,7 +32,7 @@ h3 {
 }
 
 .text-muted {
-  color: var(--color-grey-700);
+  color: var(--color-grey-500);
 }
 
 h1, h2, h3, p, li {
@@ -59,13 +60,14 @@ h1, h2, h3, p, li {
 
 .card {
   border: 1pt solid var(--color-border);
-  border-radius: 2px;
+  border-radius: 8px;
   padding: calc(var(--spacing) * 4);
+  background-color: var(--card-background-color);
 }
 
 .btn {
   border: 1pt solid var(--color-border);
-  border-radius: 2px;
+  border-radius: 4px;
   font-size: var(--text-sm);
   line-height: var(--text-sm--line-height);
   padding: calc(var(--spacing) * 2);
@@ -74,13 +76,12 @@ h1, h2, h3, p, li {
 }
 
 .btn:hover {
-  background-color: var(--color-grey-900);
+  background-color: var(--color-grey-800);
   cursor: pointer;
   transition: background-color 150ms;
 }
 
 .btn:hover span {
-  color: var(--color-background);
   transition: color 150ms;
 }
 

@@ -10,7 +10,7 @@
 ::ng-deep p {
   margin-bottom: calc(var(--spacing));
   line-height: var(--tw-leading, var(--text-sm--line-height));
-  color: var(--color-grey-700);
+  color: var(--color-grey-500);
 }
 
 ::ng-deep hr {
@@ -43,6 +43,8 @@
 
 ::ng-deep .legend > text {
   font-family: var(--theme-font-mono) !important;
+  color: var(--color-grey-200);
+  fill: var(--color-grey-200) !important;
 }
 
 ::ng-deep text.slice {
