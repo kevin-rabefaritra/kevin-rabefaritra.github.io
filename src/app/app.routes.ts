@@ -5,11 +5,11 @@ import { PrivacyPolicyComponent } from './projects/pharmada/privacy-policy/priva
 import { DocsPage } from './docs/pages/docs.page';
 
 export const routes: Routes = [
-  { path: '', title: 'Accueil', component: HomeComponent },
+  { path: '', title: 'Kevin Rabefaritra', component: HomeComponent },
 
   // Projects
   { path: 'pharmada', title: 'Pharmada', component: PharmadaComponent },
-  { path: 'pharmada/privacy-policy', title: 'Pharmada | Privacy policy', component: PrivacyPolicyComponent },
+  { path: 'pharmada/privacy-policy', title: 'Pharmada Privacy policy', component: PrivacyPolicyComponent },
 
   // Docs
   { path: 'd', title: 'Documents', component: DocsPage },

@@ -10,14 +10,14 @@ export class SeoService {
   private readonly metaService = inject(Meta);
 
   setInfo(title: string, description?: string): void {
-    this.titleService.setTitle(title);
-    
+    this.titleService.setTitle(`Kevin Rabefaritra - ${title}`);
+
     // title
     this.metaService.updateTag({ property: 'og:title', content: title });
 
     if (description) {
-      this.metaService.updateTag({ name: 'description', content: description});
-      this.metaService.updateTag({ property: 'og:description', content: description});
+      this.metaService.updateTag({ name: 'description', content: description });
+      this.metaService.updateTag({ property: 'og:description', content: description });
     }
   }
 }
