@@ -12,6 +12,6 @@ export const routes: Routes = [
   { path: 'pharmada/privacy-policy', title: 'Pharmada Privacy policy', component: PrivacyPolicyComponent },
 
   // Docs
-  { path: 'd', title: 'Documents', component: DocsPage },
-  { path: 'd/:src', title: 'Documents', component: DocsPage }
+  { path: 'documents', title: 'Documents', component: DocsPage },
+  { path: 'documents/:src', title: 'Documents', component: DocsPage }
 ];
