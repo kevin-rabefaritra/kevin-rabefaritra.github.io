@@ -5,7 +5,7 @@ import { PrivacyPolicyComponent } from './projects/pharmada/privacy-policy/priva
 import { DocsPage } from './docs/pages/docs.page';
 
 export const routes: Routes = [
-  { path: '', title: 'Kevin Rabefaritra', component: HomeComponent },
+  { path: '', title: 'Kevin Rabefaritra - le site existe !', component: HomeComponent },
 
   // Projects
   { path: 'pharmada', title: 'Pharmada', component: PharmadaComponent },
