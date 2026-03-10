@@ -8,8 +8,8 @@ export const routes: Routes = [
   { path: '', title: 'Kevin Rabefaritra - le site existe !', component: HomeComponent },
 
   // Projects
-  { path: 'pharmada', title: 'Pharmada', component: PharmadaComponent },
-  { path: 'pharmada/privacy-policy', title: 'Pharmada Privacy policy', component: PrivacyPolicyComponent },
+  { path: 'pharmada', title: 'Pharmada - informations pratiques', component: PharmadaComponent },
+  { path: 'pharmada/privacy-policy', title: 'Pharmada - privacy policy', component: PrivacyPolicyComponent },
 
   // Docs
   { path: 'documents', title: 'Documents', component: DocsPage },
