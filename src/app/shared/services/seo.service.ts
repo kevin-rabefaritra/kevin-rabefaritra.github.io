@@ -10,7 +10,7 @@ export class SeoService {
   private readonly metaService = inject(Meta);
 
   setInfo(title: string, description?: string): void {
-    this.titleService.setTitle(`Kevin Rabefaritra - ${title}`);
+    this.titleService.setTitle(`Kevin R. - ${title}`);
 
     // title
     this.metaService.updateTag({ property: 'og:title', content: title });
