@@ -1,5 +1,7 @@
 # Élection présidentielle 2023
+
 ## Statistiques générales
+
 On observe seulement un taux de participation de **~46,35%** au niveau national.
 
 ![Statistiques générales votants élection présidentielle 2023 Madagascar](/docs/election-presidentielle-2023-votants.png "Statistiques générales votants élection présidentielle 2023 Madagascar")
@@ -33,7 +35,8 @@ pie showData
 "Melaky": 122435
 ```
 
--------------------
+---
+
 # Statistiques par catégorie socio-professionnelle
 
 ## National
@@ -89,7 +92,8 @@ pie showData
 "Autre": 329689
 ```
 
--------------------
+---
+
 # Lien entre catégorie socio-profesionnelle et votes
 
 Les analyses ci-dessous ont été faites sur les résultats d'environ **24 000 bureaux** de vote.
@@ -107,28 +111,28 @@ Pourtant, il semble y avoir un lien entre les **étudiants** et le taux de **vot
 
 ![Relation entre le nombre d'étudiants et le taux de votes](/docs/election-presidentielle-2023-etudiants-se.png "Relation entre le nombre d'étudiants et le taux de votes")
 
--------------------
+---
+
 # Fokontany remportés par candidat
 
 En prenant compte uniquement le candidat ayant la majorité des votes par fokontany.
 
-|Candidat   |Fokontany remportés   |
-|---|---|
-|1. Tahina RAZAFINJOELINA  |   3|
-|2. Hajo Herivelona ANDRIANAINARIVELO   |   6|
-|3. Andry Nirina RAJOELINA   |14 135|
-|4. Iarovana Roland RATSIRAKA   |   2|
-|5. Marc RAVALOMANANA   | 2 119|
-|6. Auguste Richard PARAINA   |   4|
-|7. Andry RAOBELINA   |   0|
-|8. Jean Brunelle RAZAFINTSIANDRAOFA   |   6|
-|9. Lalaina Harilanto RATSIRAHONANA   |   0|
-|10. Hery Martial RAJOANARIMAMPIANINA   |685|
-|11. Sendrison Daniela RADERANIRINA   |   0|
-|12. Jean-Jacques RATSIETISON   |   0|
-|13. Siteny Thierry RANDRIANASOLONIAIKO   |1 979|
-|Ex-aequo   |113   |
-|*Total*   |19 052|
-
+| Candidat                               | Fokontany remportés |
+| -------------------------------------- | ------------------- |
+| 1. Tahina RAZAFINJOELINA               | 3                   |
+| 2. Hajo Herivelona ANDRIANAINARIVELO   | 6                   |
+| 3. Andry Nirina RAJOELINA              | 14 135              |
+| 4. Iarovana Roland RATSIRAKA           | 2                   |
+| 5. Marc RAVALOMANANA                   | 2 119               |
+| 6. Auguste Richard PARAINA             | 4                   |
+| 7. Andry RAOBELINA                     | 0                   |
+| 8. Jean Brunelle RAZAFINTSIANDRAOFA    | 6                   |
+| 9. Lalaina Harilanto RATSIRAHONANA     | 0                   |
+| 10. Hery Martial RAJOANARIMAMPIANINA   | 685                 |
+| 11. Sendrison Daniela RADERANIRINA     | 0                   |
+| 12. Jean-Jacques RATSIETISON           | 0                   |
+| 13. Siteny Thierry RANDRIANASOLONIAIKO | 1 979               |
+| Ex-aequo                               | 113                 |
+| _Total_                                | 19 052              |
 
 **Sources**: [CENI](https://www.ceni-madagascar.mg/), [INSTAT](https://www.instat.mg/)

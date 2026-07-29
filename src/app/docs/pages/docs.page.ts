@@ -1,8 +1,7 @@
-import { AfterViewInit, Component, DestroyRef, inject, OnInit, signal } from '@angular/core';
+import { Component, inject, OnInit, signal } from '@angular/core';
 import { DocFile } from '../models/doc-file.model';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { PostComponent } from "../components/post/post.component";
-import { Observable, switchMap } from 'rxjs';
 import { DocsService } from '../services/docs.service';
 import { SeoService } from '../../shared/services/seo.service';
 

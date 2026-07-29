@@ -1,1 +1,17 @@
-<markdown mermaid [src]="path()" (error)="handleError($event)"></markdown>
+@if (filePath()) {
+<div class="flex justify-end">
+  <a class="btn flex items-center gap-1 justify-center" [href]="filePath()">
+    <span class="material-symbols-outlined">download</span>Télécharger</a>
+</div>
+}
+
+<div class="mt-2">
+
+  @if (type() === 'md') {
+  <markdown mermaid [src]="path()" (error)="handleError($event)"></markdown>
+  }
+  @else if (type() === 'html') {
+  <iframe [src]="safePath()" style="width: 100%; min-height: 800px; border: none;">
+  </iframe>
+  }
+</div>
