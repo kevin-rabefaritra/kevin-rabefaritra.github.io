@@ -2,55 +2,65 @@
   display: block;
 }
 
-::ng-deep h1 {
+/* All markdown styles are scoped under .md-content (the <markdown> element) so the
+   ::ng-deep rules can never leak outside the post and hit other components' headings. */
+
+::ng-deep .md-content h1 {
   margin-bottom: calc(var(--spacing) * 2);
 }
 
-::ng-deep h2,
-::ng-deep h3 {
+::ng-deep .md-content h2,
+::ng-deep .md-content h3 {
   margin-top: calc(var(--spacing) * 4);
   margin-bottom: calc(var(--spacing) * 2);
 }
 
-::ng-deep p {
+::ng-deep .md-content p {
   margin-bottom: calc(var(--spacing));
   line-height: var(--line-height-base);
   color: var(--muted);
 }
 
-::ng-deep a {
+::ng-deep .md-content a {
   color: var(--ink);
   text-decoration: none;
 }
 
-::ng-deep a:hover {
-  color: var(--color-black);
+::ng-deep .md-content a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--line-strong);
+  text-underline-offset: 4px;
 }
 
-::ng-deep hr {
+::ng-deep .md-content hr {
   margin: calc(2 * var(--spacing)) 0;
   border: 0;
   border-top: 1px solid var(--line);
 }
 
-::ng-deep ul,
-::ng-deep ol {
+::ng-deep .md-content ul,
+::ng-deep .md-content ol {
+  margin-bottom: calc(var(--spacing));
   padding-left: 0;
   list-style-position: inside;
   color: var(--muted);
 }
 
-::ng-deep img {
+::ng-deep .md-content li {
+  margin-bottom: calc(var(--spacing) / 2);
+}
+
+::ng-deep .md-content img {
   border: 1px solid var(--line);
   max-width: 100%;
 }
 
-::ng-deep code {
+::ng-deep .md-content code {
   font-family: var(--font-mono);
   font-size: 0.875em;
 }
 
-::ng-deep pre {
+::ng-deep .md-content pre {
   border: 1px solid var(--line);
   background-color: var(--bg-sunken);
   padding: calc(var(--spacing) * 3);
@@ -58,12 +68,12 @@
   overflow-x: auto;
 }
 
-::ng-deep pre code {
+::ng-deep .md-content pre code {
   background: transparent;
   padding: 0;
 }
 
-::ng-deep th {
+::ng-deep .md-content th {
   text-align: left;
   padding-right: calc(4 * var(--spacing));
   padding-left: var(--spacing);
@@ -71,39 +81,39 @@
   font-size: var(--font-size-base);
 }
 
-::ng-deep table {
+::ng-deep .md-content table {
   margin: calc(2 * var(--spacing)) 0;
   border-collapse: collapse;
 }
 
-::ng-deep td {
+::ng-deep .md-content td {
   padding-right: calc(4 * var(--spacing));
   padding-left: var(--spacing);
   border: 1px solid var(--line);
   font-size: var(--font-size-base);
 }
 
-::ng-deep tr td:nth-child(n+2) {
+::ng-deep .md-content tr td:nth-child(n+2) {
   text-align: right;
   padding-right: var(--spacing);
 }
 
-::ng-deep .legend > text {
+::ng-deep .md-content .legend > text {
   font-family: var(--font-mono) !important;
   color: var(--ink);
   fill: var(--ink) !important;
 }
 
-::ng-deep text.slice {
+::ng-deep .md-content text.slice {
   font-family: var(--font-mono) !important;
 }
 
-::ng-deep .node-labels > text {
+::ng-deep .md-content .node-labels > text {
   font-family: var(--font-mono) !important;
 }
 
 @media (min-width: 768px) {
-  ::ng-deep .legend > text {
+  ::ng-deep .md-content .legend > text {
     font-size: var(--text-sm) !important;
   }
 }
