@@ -2,7 +2,7 @@ import { Component, OnInit, inject } from '@angular/core';
 import { NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { filter } from 'rxjs';
 import { SidenavComponent } from "./shared/sidenav/sidenav.component";
-import { SeoService } from './shared/services/seo.service';
+import { SeoService, SITE_NAME } from './shared/services/seo.service';
 
 @Component({
   selector: 'app-root',
@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
     }
     const snapshot = route.snapshot;
     this.seoService.setInfo(
-      snapshot.title ?? 'Kevin Rabefaritra — Consultant IT / full-stack',
+      snapshot.title ?? SITE_NAME,
       snapshot.data['description'],
       this.router.url
     );

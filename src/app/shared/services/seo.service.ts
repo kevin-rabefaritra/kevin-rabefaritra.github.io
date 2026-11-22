@@ -3,7 +3,7 @@ import { DOCUMENT } from "@angular/common";
 import { Title, Meta } from "@angular/platform-browser";
 
 export const SITE_URL = 'https://www.kevin.mg';
-export const SITE_NAME = 'Kevin Rabefaritra — Consultant IT / full-stack';
+export const SITE_NAME = 'Kevin Rabefaritra - le site existe !';
 
 const DEFAULT_DESCRIPTION =
   'Portfolio de Kevin Rabefaritra, consultant IT / full-stack';
@@ -18,7 +18,7 @@ export class SeoService {
   private readonly document = inject(DOCUMENT);
 
   setInfo(title: string, description?: string, path?: string): void {
-    const fullTitle = title.includes('Kevin Rabefaritra') ? title : `${SITE_NAME.split(' — ')[0]} — ${title}`;
+    const fullTitle = title.includes('Kevin Rabefaritra') ? title : `${SITE_NAME.split(' - ')[0]} - ${title}`;
     const desc = description || DEFAULT_DESCRIPTION;
     const url = path ? `${SITE_URL}${path === '/' ? '/' : path}` : SITE_URL + '/';
 
