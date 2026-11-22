@@ -1,29 +1,43 @@
-<h1 class="m-5">Documents</h1>
-<div class="flex flex-col align-top gap-5 px-5 pb-5 md:px-6 max-w-4xl mx-auto">
-  <div class="card">
-    <div class="p-4">
-      <h2>Présentation</h2>
-    </div>
-    <hr />
-    <div class="px-4 py-2">
-      <ul>
-        @for (file of files; track $index) {
-        @if (selectedDoc()?.src === file.src) {
-        <li><a [routerLink]="['/documents', file.src]"><span class="material-symbols-outlined">folder_open</span> {{
-            file.name }}</a></li>
-        }
-        @else {
-        <li><a [routerLink]="['/documents', file.src]"><span class="material-symbols-outlined">folder</span> {{
-            file.name }}</a></li>
-        }
-        }
-      </ul>
+<section>
+  <div class="eyebrow">
+    <div class="eyebrow-inner">
+      <p class="hud-label text-muted"><span class="text-faint">01</span><span class="mx-2 text-faint">/</span>Documents
+      </p>
+      <p class="hud-label hidden text-faint sm:block">Notes & analyses</p>
     </div>
   </div>
 
-  @if (selectedDoc()) {
-  <div class="card overflow-x-scroll">
-    <app-post [doc]="selectedDoc()!" />
+  <div class="container-x">
+    <div class="grid-lines">
+
+      <div class="cell">
+        <div class="cell-head">
+          <p class="hud-label text-muted"><span class="text-faint">01</span><span class="mx-2 text-faint">/</span>Liste des
+            documents</p>
+        </div>
+        <ul>
+          @for (file of files; track $index) {
+          <li class="border-b border-line last:border-b-0">
+            <a [routerLink]="['/documents', file.src]"
+              class="cell-row flex items-center gap-2 transition-colors hover:bg-invert-bg hover:text-invert-fg">
+              @if (selectedDoc()?.src === file.src) {
+              <span class="material-symbols-outlined !text-base">folder_open</span>
+              } @else {
+              <span class="material-symbols-outlined !text-base">folder</span>
+              }
+              <span>{{ file.name }}</span>
+            </a>
+          </li>
+          }
+        </ul>
+      </div>
+
+      @if (selectedDoc()) {
+      <div class="cell overflow-x-auto">
+        <app-post [doc]="selectedDoc()!" />
+      </div>
+      }
+
+    </div>
   </div>
-  }
-</div>
+</section>

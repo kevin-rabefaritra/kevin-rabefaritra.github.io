@@ -1,9 +1,9 @@
-<div class="h-screen flex">
-  <div class="sidebar border-r border-border fixed top-0 left-0 h-screen text-xs flex flex-col sidebar-minimized">
+<div class="flex h-screen bg-bg text-ink">
+  <aside class="fixed left-0 top-0 z-40 h-screen w-[var(--sidebar-width)] border-r border-line bg-bg">
     <app-sidenav></app-sidenav>
-  </div>
+  </aside>
 
-  <div class="flex-1 flex flex-col transition-all duration-300 overflow-x-hidden overflow-y-auto main">
+  <main class="ml-[var(--sidebar-width)] h-screen flex-1 overflow-y-auto overflow-x-hidden">
     <router-outlet />
-  </div>
+  </main>
 </div>

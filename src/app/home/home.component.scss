@@ -1,0 +1,11 @@
+:host {
+  display: block;
+}
+
+/* Section subtitles stick right below the page eyebrow bar while scrolling:
+   each new subtitle slides over the previous one (they all share the same top offset). */
+.cell-head {
+  position: sticky;
+  top: calc(var(--eyebrow-h) + 1px);
+  z-index: 20;
+}

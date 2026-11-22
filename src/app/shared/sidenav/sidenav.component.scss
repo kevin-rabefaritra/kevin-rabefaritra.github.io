@@ -1,30 +1,22 @@
-
-li > a {
-  padding-bottom: .75rem;
-  padding-top: .75rem;
-  font-size: .875rem;
-  line-height: 1.25rem;
-  text-align: left;
+/* Sidebar cells touch each other and are separated by a 1px line.
+   Hover / active state inverts the cell, like getartcraft.com nav items. */
+.nav-cell {
   display: flex;
+  align-items: center;
   justify-content: center;
-  color : var(--color-foreground);
+  height: var(--sidebar-width);
+  width: 100%;
+  color: var(--muted);
+  border-bottom: 1px solid var(--line);
+  transition: background-color 150ms, color 150ms;
 }
 
-li:not(:last-child) > a:not(.active) {
-  border-bottom: 1px solid var(--color-border);
+.nav-cell:last-child {
+  border-bottom: 0;
 }
 
-li > a.active {
-  background-color: var(--color-foreground);
-  color : var(--color-background);
-}
-
-.btn-item {
-}
-
-.btn-item > a {
-  padding-bottom: .5rem;
-  padding-top: .5rem;
-  border: 1pt solid var(--color-border);
-  border-radius: 2px;
+.nav-cell:hover,
+.nav-cell.active {
+  background-color: var(--invert-bg);
+  color: var(--invert-fg);
 }

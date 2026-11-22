@@ -1,95 +1,254 @@
 @import "tailwindcss";
 @import 'assets/styles/variables.scss';
 
-body {
-  font-family: var(--theme-font);
-  font-size: 16px;
-  line-height: var(--line-height-base);
-  -webkit-text-size-adjust: 100%;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  color: var(--color-white);
+/* Map the runtime CSS variables to Tailwind utilities (inline => theme switching works at runtime) */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-raised: var(--bg-raised);
+  --color-bg-sunken: var(--bg-sunken);
+  --color-ink: var(--ink);
+  --color-ink-strong: var(--ink-strong);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-invert-bg: var(--invert-bg);
+  --color-invert-fg: var(--invert-fg);
+  --color-danger: var(--danger);
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-archivo);
+  --font-mono: var(--font-geist-mono);
 }
 
-hr {
-  color: var(--color-border);
-  border-top: 1pt solid var(--color-border);
+/* No rounded shapes, anywhere */
+*,
+::before,
+::after {
+  border-radius: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base-mobile);
+  line-height: var(--line-height-base);
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: var(--font-size-base);
+  }
 }
 
 /* Typography */
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  color: var(--ink-strong);
+}
+
 h1 {
-  font-weight: 700;
+  font-size: 2.25rem;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
 }
 
 h2 {
+  font-size: 1.5rem;
   font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
 }
 
 h3 {
-  font-weight: 300;
-  margin-top: calc(2 * var(--spacing));
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
 }
 
-.text-muted {
-  color: var(--color-grey-500);
-}
-
-h1, h2, h3, p, li {
-    font-size: var(--font-size-base-mobile);
-}
-@media (min-width: 768px) {
-    h1, h2, h3, p, li {
-        font-size: var(--font-size-base);
-    }
+hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 0;
 }
 
 ::selection {
-  background-color: var(--color-foreground);
-  color: var(--color-background);
+  background-color: var(--invert-bg);
+  color: var(--invert-fg);
 }
 
-/* Components */
-.bg-bg {
-  background-color: var(--color-background);
+/* ------------------------------------------------------------------ */
+/* Artcraft-style building blocks                                      */
+/* ------------------------------------------------------------------ */
+
+/* Small monospace uppercase label, e.g. "01 / Accueil" */
+.hud-label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 
-.border-border {
-  border-color: var(--color-border);
+/* Centered page container with vertical border lines on each side */
+.container-x {
+  max-width: 1280px;
+  margin-inline: auto;
+  border-left: 1px solid var(--line);
+  border-right: 1px solid var(--line);
 }
 
-.card {
-  border: 1pt solid var(--color-border);
-  border-radius: 8px;
-  padding: calc(var(--spacing) * 4);
-  background-color: var(--card-background-color);
+/* Sticky section bar at the top of a page (Artcraft "eyebrow") */
+.eyebrow {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in oklab, var(--bg) 60%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
+.eyebrow-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  height: var(--eyebrow-h);
+  padding-inline: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .eyebrow-inner {
+    padding-inline: 2.5rem;
+  }
+}
+
+/* Grid whose cells touch each other and are separated by 1px lines (gap-px over a line-colored background) */
+.grid-lines {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  background-color: var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+@media (min-width: 768px) {
+  .grid-lines-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* A single cell of a .grid-lines grid */
+.cell {
+  background-color: var(--bg);
+  min-width: 0;
+}
+
+/* Standalone bordered panel (sharp corners) */
+.panel {
+  background-color: var(--bg);
+  border: 1px solid var(--line);
+}
+
+/* Header row inside a cell: touching, separated by a bottom line */
+.cell-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid var(--line);
+  background-color: var(--bg);
+}
+
+@media (min-width: 768px) {
+  .cell-head {
+    padding-inline: 2rem;
+  }
+}
+
+/* Padded body inside a cell */
+.cell-body {
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .cell-body {
+    padding: 2rem;
+  }
+}
+
+/* Row inside a cell: rows touch each other, separated by a line */
+.cell-row {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.cell-row:last-child {
+  border-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .cell-row {
+    padding-inline: 2rem;
+  }
+}
+
+/* Buttons — sharp, monospace, uppercase (Artcraft CTA style) */
 .btn {
-  border: 1pt solid var(--color-border);
-  border-radius: 4px;
-  font-size: var(--text-sm);
-  line-height: var(--text-sm--line-height);
-  padding: calc(var(--spacing) * 2);
-  text-align: center;
-  transition: background-color 150ms;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 3rem;
+  padding-inline: 1.5rem;
+  border: 1px solid var(--line-strong);
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 150ms, color 150ms, border-color 150ms, opacity 150ms;
 }
 
 .btn:hover {
-  background-color: var(--color-grey-800);
-  cursor: pointer;
-  transition: background-color 150ms;
+  background-color: var(--invert-bg);
+  color: var(--invert-fg);
+  border-color: transparent;
 }
 
-.btn:hover span {
-  transition: color 150ms;
+/* Solid (inverted) button variant */
+.btn-solid {
+  background-color: var(--invert-bg);
+  color: var(--invert-fg);
+  border-color: var(--invert-bg);
+}
+
+.btn-solid:hover {
+  background-color: var(--invert-bg);
+  color: var(--invert-fg);
+  border-color: var(--invert-bg);
+  opacity: 0.8;
 }
 
 /* icons */
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 1,
-  'wght' 200,
-  'GRAD' 0,
-  'opsz' 24
+    'FILL' 1,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 24;
 }
