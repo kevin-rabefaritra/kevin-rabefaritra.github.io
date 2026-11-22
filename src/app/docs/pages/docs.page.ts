@@ -28,7 +28,7 @@ export class DocsPage implements OnInit {
       const doc = this.docsService.findBySrc(src);
       if (doc) {
         this.selectedDoc.set(doc);
-        this.seoService.setInfo(doc.name, doc.description);
+        this.seoService.setInfo(doc.name, doc.description, `/documents/${doc.src}`);
       }
     });
   }
