@@ -1,5 +1,5 @@
 import { Component, OnInit, inject } from '@angular/core';
-import { NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { filter } from 'rxjs';
 import { SidenavComponent } from "./shared/sidenav/sidenav.component";
 import { SeoService, SITE_NAME } from './shared/services/seo.service';
@@ -8,8 +8,6 @@ import { SeoService, SITE_NAME } from './shared/services/seo.service';
   selector: 'app-root',
   imports: [
     RouterOutlet,
-    RouterLink,
-    RouterLinkActive,
     SidenavComponent
   ],
   templateUrl: './app.component.html',

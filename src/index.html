@@ -6,6 +6,33 @@
   <title>Kevin Rabefaritra - Consultant IT / full-stack</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <style>
+    :root {
+      --bg: #f2f1ee;
+      color-scheme: light
+    }
+
+    html {
+      background-color: var(--bg)
+    }
+
+    body {
+      margin: 0
+    }
+
+    html[data-theme=dark] {
+      --bg: #121316;
+      color-scheme: dark
+    }
+
+    @media (prefers-color-scheme:dark) {
+      :root:not([data-theme=light]) {
+        --bg: #121316;
+        color-scheme: dark
+      }
+    }
+  </style>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="canonical" href="https://www.kevin.mg/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
