@@ -1,3 +1,8 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
 /* Sidebar cells touch each other and are separated by a 1px line.
    Hover / active state inverts the cell, like getartcraft.com nav items. */
 .nav-cell {

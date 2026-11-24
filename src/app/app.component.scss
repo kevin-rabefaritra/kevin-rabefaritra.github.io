@@ -1,3 +1,27 @@
 :host {
   display: block;
 }
+
+/* Use the dynamic viewport height (100dvh) instead of 100vh so the layout fits the
+   *visible* area on mobile, i.e. above the browser's bottom bar. The 100vh line is the
+   fallback for browsers without dvh support. These component styles intentionally
+   override the Tailwind `h-screen` utility classes. */
+.shell,
+.shell-aside,
+.shell-main {
+  height: 100vh;
+  height: 100dvh;
+}
+
+/* Keep the sidebar content (nav + social icons) inside the safe area: below the
+   status bar / notch at the top, and above the home indicator at the bottom. */
+.shell-aside {
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  padding-left: env(safe-area-inset-left, 0px);
+}
+
+/* Same for the main scroll area, so the footer is not hidden behind the bottom bar. */
+.shell-main {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}

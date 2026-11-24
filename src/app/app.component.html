@@ -1,9 +1,10 @@
-<div class="flex h-screen bg-bg text-ink">
-  <aside class="fixed left-0 top-0 z-40 h-screen w-[var(--sidebar-width)] border-r border-line bg-bg">
+<div class="shell flex h-screen bg-bg text-ink">
+  <aside
+    class="shell-aside fixed left-0 top-0 z-40 h-screen w-[var(--sidebar-width)] border-r border-line bg-bg">
     <app-sidenav></app-sidenav>
   </aside>
 
-  <main class="ml-[var(--sidebar-width)] h-screen flex-1 overflow-y-auto overflow-x-hidden">
+  <main class="shell-main ml-[var(--sidebar-width)] h-screen flex-1 overflow-y-auto overflow-x-hidden">
     <router-outlet />
   </main>
 </div>
